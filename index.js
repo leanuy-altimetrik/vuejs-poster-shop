@@ -1,9 +1,14 @@
+import Vue from 'vue'
+import Vuetify from 'vuetify'
+
 var express = require('express');
 var app = express();
 var path = require('path');
 var server = require('http').createServer(app);
 var axios = require('axios');
 var querystring = require('querystring');
+
+Vue.use(Vuetify)
 
 require('dotenv').config();
 
